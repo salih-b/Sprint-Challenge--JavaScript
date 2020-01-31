@@ -52,7 +52,7 @@ D.explicit binding is when your specifically defining "this" to a specific place
   this is usually used with .call and .apply
 
 5. Why do we need super() in an extended class?
-super() allows us to access the Parent constructor's keys.
+super() allows us to access the Parent constructor's keys/properties.
 
 ## Project Set up
 
