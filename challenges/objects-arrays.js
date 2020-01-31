@@ -95,7 +95,14 @@ console.log(contactInfo);
 /* Request 3: Find out how many universities have the string "Uni" included in their name. Create a new array called 
 unisWithUni that contains them all. This will be an array of objects. Log the result. */
 const unisWithUni = [];
+ graduates.forEach(uni);
+  function uni (obj){
+  if (obj.university.includes("Uni")) {
+    return unisWithUni.push(obj.university);
+  } 
+}
 console.log(unisWithUni);
+
 
 
 // ==== ADVANCED Array Methods ====
@@ -125,13 +132,13 @@ displayNames will be an array of strings, and each string should follow this pat
 
 */
 function animalNaming(obj){
-  return `Name: ${obj.animal_name}, Scientific: ${obj.scientific_name}`;
-  };
-  const displayNames = zooAnimals.map(function(){
-    return `${zooAnimals.forEach(animalNaming)}`;
-  });
+  return displayNames.push(`Name: ${obj.animal_name}, Scientific: ${obj.scientific_name}`);
+  }
+  const displayNames =[];      
+  zooAnimals.forEach(animalNaming);
+  
   console.log(displayNames);
-
+  
 /* Request 2: .map()
 
 The zoos need a list of all their animal's names (animal_name only) converted to lower case. Using map, 
